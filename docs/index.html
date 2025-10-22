@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Rue des Graphismes</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Indie+Flower&display=swap" rel="stylesheet">
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Montserrat', Arial, sans-serif;
+      background: linear-gradient(120deg, #f9e9ec 0%, #ddeaf6 100%);
+      color: #222;
+    }
+    header {
+      background: #ffe066;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+      border-bottom: 2px solid #ddd;
+    }
+    h1 {
+      margin: 0.2em 0 0 0;
+      font-family: 'Indie Flower', cursive;
+      font-size: 3rem;
+      color: #f45b69;
+      letter-spacing: 1px;
+      text-shadow: 1px 2px 0 #fff6d1;
+    }
+    .subtitle {
+      font-size: 1.3rem;
+      color: #3887be;
+      margin-bottom: 0.2em;
+    }
+
+    main {
+      max-width: 650px;
+      margin: 2rem auto;
+      padding: 2rem 1.5rem;
+      background: rgba(255,255,255,0.82);
+      border-radius: 18px;
+      box-shadow: 0 0 18px 0 rgba(153,153,153,0.10);
+    }
+    .slogan {
+      font-family: 'Indie Flower', cursive;
+      font-size: 1.5rem;
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #f45b69;
+      background: linear-gradient(90deg, #ffe066 60%, #f45b69 130%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+      background-clip: text;
+    }
+    .features {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.2rem;
+      justify-content: center;
+      margin-bottom: 2rem;
+    }
+    .feature {
+      flex: 1 1 220px;
+      background: #ddeaf6;
+      border: 2px solid #ffe066;
+      border-radius: 12px;
+      padding: 1.3rem 1rem;
+      text-align: center;
+      font-size: 1.07rem;
+      min-width: 180px;
+      transition: box-shadow 0.2s;
+    }
+    .feature:hover {
+      box-shadow: 0 4px 16px #ffe06677;
+    }
+    .feature-emoji {
+      font-size: 2.2rem;
+      display: block;
+      margin-bottom: 0.4em;
+      text-shadow: 1px 1px 3px #fff9;
+    }
+    .cta {
+      display: block;
+      width: max-content;
+      margin: 1.5rem auto 0 auto;
+      background: #f45b69;
+      color: #fff;
+      font-weight: bold;
+      text-decoration: none;
+      font-size: 1.2rem;
+      padding: 0.7em 2em;
+      border-radius: 22px;
+      box-shadow: 0 2px 10px #f45b6940;
+      transition: background 0.15s;
+    }
+    .cta:hover {
+      background: #3887be;
+    }
+    footer {
+      text-align: center;
+      color: #aaa;
+      margin: 3rem 0 1rem 0;
+      font-size: 0.98em;
+    }
+    @media (max-width: 700px) {
+      main { padding: 1rem 0.3rem; }
+      .features { flex-direction: column; align-items: stretch; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>Rue des Graphismes</h1>
+    <div class="subtitle">Le site culturel, amusant et social où la créativité se balade !</div>
+  </header>
+  <main>
+    <div class="slogan">
+      🎨 Explore ta créativité, partage tes inspirations, amuse-toi en couleurs !
+    </div>
+    <div class="features">
+      <div class="feature">
+        <span class="feature-emoji">🖌️</span>
+        <b>Galeries collaboratives</b><br>
+        Expose tes créations ou découvre celles des autres membres.
+      </div>
+      <div class="feature">
+        <span class="feature-emoji">🎲</span>
+        <b>Jeux graphiques</b><br>
+        Participe à des défis, concours et jeux autour du dessin et du graphisme.
+      </div>
+      <div class="feature">
+        <span class="feature-emoji">💬</span>
+        <b>Espace social</b><br>
+        Réagis, commente, discute avec des passionnés de tout horizon.
+      </div>
+    </div>
+    <a class="cta" href="#">Rejoindre l'aventure</a>
+  </main>
+  <footer>
+    &copy; 2025 Rue des Graphismes · Fait avec <span style="color:#f45b69">♥</span> pour tous les créatifs
+  </footer>
+</body>
+</html>
