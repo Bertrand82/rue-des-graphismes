@@ -2,141 +2,163 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8">
-  <title>Rue des Graphismes</title>
+  <title>Montpezat' Arts — Village en Couleurs</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <link href="https://fonts.googleapis.com/css?family=Montserrat:700,400|Indie+Flower&display=swap" rel="stylesheet">
+  <!-- Palette inspirée de l'affiche -->
+  <link href="https://fonts.googleapis.com/css?family=Luckiest+Guy|Montserrat:700,400&display=swap" rel="stylesheet">
   <style>
+    :root {
+      --ocre: #d3a035;
+      --magenta: #a7465a;
+      --turquoise: #1ca39d;
+      --prune: #7a2747;
+      --beige: #f7ecd7;
+      --noir: #141414;
+    }
     body {
       margin: 0;
       font-family: 'Montserrat', Arial, sans-serif;
-      background: linear-gradient(120deg, #f9e9ec 0%, #ddeaf6 100%);
-      color: #222;
+      background: var(--beige);
+      color: var(--noir);
     }
     header {
-      background: #ffe066;
-      padding: 2rem 1rem 1rem 1rem;
       text-align: center;
-      border-bottom: 2px solid #ddd;
+      padding: 2rem 1rem 1rem 1rem;
+      background: var(--ocre);
+      border-bottom: 4px solid var(--magenta);
     }
     h1 {
-      margin: 0.2em 0 0 0;
-      font-family: 'Indie Flower', cursive;
-      font-size: 3rem;
-      color: #f45b69;
-      letter-spacing: 1px;
-      text-shadow: 1px 2px 0 #fff6d1;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 3.2rem;
+      color: var(--turquoise);
+      letter-spacing: 2px;
+      margin: 0.1em 0 0.2em 0;
+      text-shadow: 2px 2px 0 #fff, 4px 4px 0 var(--magenta);
     }
     .subtitle {
-      font-size: 1.3rem;
-      color: #3887be;
-      margin-bottom: 0.2em;
-    }
-
-    main {
-      max-width: 650px;
-      margin: 2rem auto;
-      padding: 2rem 1.5rem;
-      background: rgba(255,255,255,0.82);
-      border-radius: 18px;
-      box-shadow: 0 0 18px 0 rgba(153,153,153,0.10);
-    }
-    .slogan {
-      font-family: 'Indie Flower', cursive;
-      font-size: 1.5rem;
-      text-align: center;
-      margin-bottom: 2rem;
-      color: #f45b69;
-      background: linear-gradient(90deg, #ffe066 60%, #f45b69 130%);
-      -webkit-background-clip: text;
-      -webkit-text-fill-color: transparent;
-      background-clip: text;
-    }
-    .features {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1.2rem;
-      justify-content: center;
-      margin-bottom: 2rem;
-    }
-    .feature {
-      flex: 1 1 220px;
-      background: #ddeaf6;
-      border: 2px solid #ffe066;
-      border-radius: 12px;
-      padding: 1.3rem 1rem;
-      text-align: center;
-      font-size: 1.07rem;
-      min-width: 180px;
-      transition: box-shadow 0.2s;
-    }
-    .feature:hover {
-      box-shadow: 0 4px 16px #ffe06677;
-    }
-    .feature-emoji {
-      font-size: 2.2rem;
-      display: block;
-      margin-bottom: 0.4em;
-      text-shadow: 1px 1px 3px #fff9;
-    }
-    .cta {
-      display: block;
-      width: max-content;
-      margin: 1.5rem auto 0 auto;
-      background: #f45b69;
-      color: #fff;
+      font-size: 1.4rem;
+      color: var(--prune);
+      margin-bottom: 0.5em;
       font-weight: bold;
-      text-decoration: none;
-      font-size: 1.2rem;
-      padding: 0.7em 2em;
-      border-radius: 22px;
-      box-shadow: 0 2px 10px #f45b6940;
-      transition: background 0.15s;
+      letter-spacing: 1px;
     }
-    .cta:hover {
-      background: #3887be;
+    main {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 2rem;
+      max-width: 800px;
+      margin: 2rem auto 0 auto;
+      background: rgba(255,255,255,0.92);
+      border-radius: 24px;
+      box-shadow: 0 0 16px 0 #a7465a22;
+      padding: 2rem 1.5rem;
+    }
+    .affiche {
+      width: 100%;
+      max-width: 420px;
+      border-radius: 18px;
+      box-shadow: 0 6px 30px #a7465a33;
+      border: 4px solid var(--turquoise);
+      margin-bottom: 1.5rem;
+    }
+    .welcome {
+      background: linear-gradient(90deg, var(--turquoise) 60%, var(--magenta) 120%);
+      color: #fff;
+      font-family: 'Luckiest Guy', cursive;
+      font-size: 1.7rem;
+      text-align: center;
+      padding: 0.85em 1em;
+      border-radius: 50px;
+      margin-bottom: 1.7em;
+      box-shadow: 0 2px 16px #1ca39d33;
+      letter-spacing: 1.5px;
+    }
+    .infos {
+      background: var(--prune);
+      color: #fff;
+      border-radius: 32% 68% 55% 45% / 53% 57% 43% 47%;
+      padding: 1.2rem 2.2rem;
+      margin: 0.7rem 0 1.7rem 0;
+      font-size: 1.13rem;
+      box-shadow: 0 4px 18px #d3a03533;
+      max-width: 400px;
+      text-align: center;
+    }
+    .actions {
+      display: flex;
+      gap: 1.3em;
+      justify-content: center;
+      flex-wrap: wrap;
+      margin-top: 1em;
+    }
+    .action {
+      background: var(--ocre);
+      color: var(--noir);
+      font-family: 'Montserrat', sans-serif;
+      font-weight: bold;
+      font-size: 1.1em;
+      border-radius: 32px;
+      border: none;
+      padding: 0.8em 2em;
+      text-decoration: none;
+      margin: 0.3em 0;
+      box-shadow: 0 2px 10px #d3a03544;
+      transition: background 0.2s;
+      cursor: pointer;
+      display: inline-block;
+    }
+    .action:hover {
+      background: var(--turquoise);
+      color: #fff;
     }
     footer {
       text-align: center;
-      color: #aaa;
-      margin: 3rem 0 1rem 0;
-      font-size: 0.98em;
+      margin: 2.5rem 0 1.2rem 0;
+      font-size: 1em;
+      color: #888;
     }
     @media (max-width: 700px) {
-      main { padding: 1rem 0.3rem; }
-      .features { flex-direction: column; align-items: stretch; }
+      main {
+        padding: 0.7rem 0.1rem;
+        border-radius: 0;
+      }
+      .affiche {
+        max-width: 98vw;
+      }
+      .infos {
+        padding: 1rem 0.5rem;
+        font-size: 1em;
+      }
     }
   </style>
 </head>
 <body>
   <header>
-    <h1>Rue des Graphismes</h1>
-    <div class="subtitle">Le site culturel, amusant et social où la créativité se balade !</div>
+    <h1>Montpezat' Arts</h1>
+    <div class="subtitle">Le rendez-vous culturel & social du village — convivialité, découvertes et création</div>
   </header>
   <main>
-    <div class="slogan">
-      🎨 Explore ta créativité, partage tes inspirations, amuse-toi en couleurs !
+    <img src="images/affiche_2025.jpg" alt="Affiche Montpezat Arts 2025" class="affiche">
+    <div class="welcome">
+      Bienvenue à Montpezat-de-Quercy ! <br>
+      Ici, la culture, l'art et la vie sociale se rencontrent dans la bonne humeur.
     </div>
-    <div class="features">
-      <div class="feature">
-        <span class="feature-emoji">🖌️</span>
-        <b>Galeries collaboratives</b><br>
-        Expose tes créations ou découvre celles des autres membres.
-      </div>
-      <div class="feature">
-        <span class="feature-emoji">🎲</span>
-        <b>Jeux graphiques</b><br>
-        Participe à des défis, concours et jeux autour du dessin et du graphisme.
-      </div>
-      <div class="feature">
-        <span class="feature-emoji">💬</span>
-        <b>Espace social</b><br>
-        Réagis, commente, discute avec des passionnés de tout horizon.
-      </div>
+    <div class="infos">
+      <b>Expo, ateliers, partage & rencontres</b><br>
+      Peinture, bijoux, vitrail, photographie, sculpture, scrapbooking, dessin, lampes et miroirs... <br>
+      <br>
+      <b>Prochaine édition :</b> 27 & 28 septembre 2025, salle du Faillal <br>
+      Vernissage samedi 27 à 12h
     </div>
-    <a class="cta" href="#">Rejoindre l'aventure</a>
+    <div class="actions">
+      <a href="mailto:contact@rue-des-graphismes.fr" class="action">Nous contacter</a>
+      <a href="#" class="action">Découvrir le programme</a>
+      <a href="#" class="action">Rejoindre l'association</a>
+    </div>
   </main>
   <footer>
-    &copy; 2025 Rue des Graphismes · Fait avec <span style="color:#f45b69">♥</span> pour tous les créatifs
+    &copy; 2025 Montpezat' Arts — Site conçu par Rue des Graphismes
   </footer>
 </body>
 </html>
